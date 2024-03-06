@@ -1,0 +1,86 @@
+{
+    "sourceFile": "youtube.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 17,
+            "patches": [
+                {
+                    "date": 1709720825542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1709720861582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,12 @@\n <html>\n \n <head>\n     <title>Youtube.com Clone</title>\n+\n+    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n+    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n+    <link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap\" rel=\"stylesheet\">\n     <style >\n         .thumbnail {\n             width: 300px;\n             display: block;\n"
+                },
+                {
+                    "date": 1709720904303,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,14 @@\n     <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n     <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n     <link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap\" rel=\"stylesheet\">\n     <style >\n+\n+        p {\n+            font-family: Roboto,Arial;\n+            margin-top: 0;\n+            margin-bottom: 0;\n+        }\n         .thumbnail {\n             width: 300px;\n             display: block;\n         }\n"
+                },
+                {
+                    "date": 1709720918774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n                 display: block;\n         }\n \n         .video-title {\n-            width: 300px;\n+            \n         }\n \n         .video-preview {\n \n"
+                },
+                {
+                    "date": 1709720983475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             display: block;\n         }\n \n         .search-bar{\n-                display: block;\n+                display: inline-block;\n         }\n \n         .video-title {\n             \n"
+                },
+                {
+                    "date": 1709720990888,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             display: block;\n         }\n \n         .search-bar{\n-                display: inline-block;\n+                display: block;\n         }\n \n         .video-title {\n             \n"
+                },
+                {
+                    "date": 1709721036619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,10 +41,12 @@\n \n     <body>\n \n  \n+        <div>\n+            <input class=\"searh-bar\" type=\"text\" placeholder=\"Search\">\n+        </div>\n         \n-        <input class=\"searh-bar\" type=\"text\" placeholder=\"Search\">\n \n         <div class=\"video-preview\">\n \n             <img class=\"thumbnail\" src=\"thumbnails/thumbnail.png\" alt=\"Dinosaur\"/>\n"
+                },
+                {
+                    "date": 1709721044059,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,12 +41,10 @@\n \n     <body>\n \n  \n-        <div>\n-            <input class=\"searh-bar\" type=\"text\" placeholder=\"Search\">\n-        </div>\n         \n+        <input class=\"searh-bar\" type=\"text\" placeholder=\"Search\">\n \n         <div class=\"video-preview\">\n \n             <img class=\"thumbnail\" src=\"thumbnails/thumbnail.png\" alt=\"Dinosaur\"/>\n"
+                },
+                {
+                    "date": 1709721088745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,11 @@\n                 display: block;\n         }\n \n         .video-title {\n+            margin-top: 0;\n+            font-size: 14px;\n+            font-weight: 500;\n             \n         }\n \n         .video-preview {\n"
+                },
+                {
+                    "date": 1709721097034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,72 @@\n+<!DOCTYPE html>\n+<html>\n+\n+<head>\n+    <title>Youtube.com Clone</title>\n+\n+    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n+    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n+    <link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap\" rel=\"stylesheet\">\n+    <style >\n+\n+        p {\n+            font-family: Roboto,Arial;\n+            margin-top: 0;\n+            margin-bottom: 0;\n+        }\n+        .thumbnail {\n+            width: 300px;\n+            display: block;\n+        }\n+\n+        .search-bar{\n+                display: block;\n+        }\n+\n+        .video-title {\n+            margin-top: 0;\n+            font-size: 14px;\n+            font-weight: 500;\n+            line-height: 20px;\n+        }\n+\n+        .video-preview {\n+\n+            width: 300px;\n+            display: inline-block;\n+            vertical-align: top;\n+            margin-right: 15px;\n+        }\n+\n+\n+        \n+    </style>\n+\n+    <body>\n+\n+ \n+        \n+        <input class=\"searh-bar\" type=\"text\" placeholder=\"Search\">\n+\n+        <div class=\"video-preview\">\n+\n+            <img class=\"thumbnail\" src=\"thumbnails/thumbnail.png\" alt=\"Dinosaur\"/>\n+\n+            <p class=\"video-title\">\n+                Talking Tech and AI with Google CEO Sundar Pichai!\n+            </p>\n+\n+            <p class=\"video-author\">\n+                Marques Brownlee\n+            </p>\n+\n+            <p class=\"video-stats\">\n+                3.4M views &#183; 6 months ago\n+            </p>\n+        </div>\n+\n+\n+        \n+    </body>\n+</head>\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1709721105998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,9 @@\n             margin-top: 0;\n             font-size: 14px;\n             font-weight: 500;\n             line-height: 20px;\n+            margin-bottom: 12px;\n         }\n \n         .video-preview {\n \n@@ -68,77 +69,5 @@\n \n         \n     </body>\n </head>\n-</html>\n-<!DOCTYPE html>\n-<html>\n-\n-<head>\n-    <title>Youtube.com Clone</title>\n-\n-    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n-    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n-    <link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap\" rel=\"stylesheet\">\n-    <style >\n-\n-        p {\n-            font-family: Roboto,Arial;\n-            margin-top: 0;\n-            margin-bottom: 0;\n-        }\n-        .thumbnail {\n-            width: 300px;\n-            display: block;\n-        }\n-\n-        .search-bar{\n-                display: block;\n-        }\n-\n-        .video-title {\n-            margin-top: 0;\n-            font-size: 14px;\n-            font-weight: 500;\n-            \n-        }\n-\n-        .video-preview {\n-\n-            width: 300px;\n-            display: inline-block;\n-            vertical-align: top;\n-            margin-right: 15px;\n-        }\n-\n-\n-        \n-    </style>\n-\n-    <body>\n-\n- \n-        \n-        <input class=\"searh-bar\" type=\"text\" placeholder=\"Search\">\n-\n-        <div class=\"video-preview\">\n-\n-            <img class=\"thumbnail\" src=\"thumbnails/thumbnail.png\" alt=\"Dinosaur\"/>\n-\n-            <p class=\"video-title\">\n-                Talking Tech and AI with Google CEO Sundar Pichai!\n-            </p>\n-\n-            <p class=\"video-author\">\n-                Marques Brownlee\n-            </p>\n-\n-            <p class=\"video-stats\">\n-                3.4M views &#183; 6 months ago\n-            </p>\n-        </div>\n-\n-\n-        \n-    </body>\n-</head>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1709721129711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n             display: block;\n         }\n \n         .search-bar{\n+            background-attachment: red;\n                 display: block;\n         }\n \n         .video-title {\n"
+                },
+                {
+                    "date": 1709721135968,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             display: block;\n         }\n \n         .search-bar{\n-            background-attachment: red;\n+            background-color: red;\n                 display: block;\n         }\n \n         .video-title {\n"
+                },
+                {
+                    "date": 1709721175894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n  \n         \n         <input class=\"searh-bar\" type=\"text\" placeholder=\"Search\">\n \n-        <div class=\"video-preview\">\n+        <!-- <div class=\"video-preview\">\n \n             <img class=\"thumbnail\" src=\"thumbnails/thumbnail.png\" alt=\"Dinosaur\"/>\n \n             <p class=\"video-title\">\n@@ -64,9 +64,9 @@\n \n             <p class=\"video-stats\">\n                 3.4M views &#183; 6 months ago\n             </p>\n-        </div>\n+        </div> -->\n \n \n         \n     </body>\n"
+                },
+                {
+                    "date": 1709721183797,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,8 +48,9 @@\n \n  \n         \n         <input class=\"searh-bar\" type=\"text\" placeholder=\"Search\">\n+        <div>fdsadfs</div>\n \n         <!-- <div class=\"video-preview\">\n \n             <img class=\"thumbnail\" src=\"thumbnails/thumbnail.png\" alt=\"Dinosaur\"/>\n"
+                },
+                {
+                    "date": 1709721206915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,11 +48,11 @@\n \n  \n         \n         <input class=\"searh-bar\" type=\"text\" placeholder=\"Search\">\n-        <div>fdsadfs</div>\n+       \n \n-        <!-- <div class=\"video-preview\">\n+        <div class=\"video-preview\">\n \n             <img class=\"thumbnail\" src=\"thumbnails/thumbnail.png\" alt=\"Dinosaur\"/>\n \n             <p class=\"video-title\">\n@@ -65,9 +65,9 @@\n \n             <p class=\"video-stats\">\n                 3.4M views &#183; 6 months ago\n             </p>\n-        </div> -->\n+        </div>\n \n \n         \n     </body>\n"
+                },
+                {
+                    "date": 1709721253990,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             display: block;\n         }\n \n         .search-bar{\n-            background-color: red;\n+             \n                 display: block;\n         }\n \n         .video-title {\n"
+                },
+                {
+                    "date": 1709721362129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,80 @@\n+<!DOCTYPE html>\n+<html>\n+\n+<head>\n+    <title>Youtube.com Clone</title>\n+\n+    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n+    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n+    <link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap\" rel=\"stylesheet\">\n+    <style >\n+\n+        p {\n+            font-family: Roboto,Arial;\n+            margin-top: 0;\n+            margin-bottom: 0;\n+        }\n+        .thumbnail {\n+            width: 300px;\n+            display: block;\n+        }\n+\n+        .search-bar{\n+             \n+                display: block;\n+        }\n+\n+        .video-title {\n+            margin-top: 0;\n+            font-size: 14px;\n+            font-weight: 500;\n+            line-height: 20px;\n+            margin-bottom: 12px;\n+        }\n+\n+        .video-preview {\n+\n+            width: 300px;\n+            display: inline-block;\n+            vertical-align: top;\n+            margin-right: 15px;\n+        }\n+\n+\n+        \n+    </style>\n+\n+    <body>\n+\n+ \n+        \n+        <input class=\"searh-bar\" type=\"text\" placeholder=\"Search\">\n+       \n+\n+        <div class=\"video-preview\">\n+\n+            <img class=\"thumbnail\" src=\"thumbnails/thumbnail.png\" alt=\"Dinosaur\"/>\n+\n+            <p class=\"video-title\">\n+                Talking Tech and AI with Google CEO Sundar Pichai!\n+            </p>\n+\n+            <p class=\"video-author\">\n+                Marques Brownlee\n+            </p>\n+\n+            <p class=\"video-stats\">\n+                3.4M views &#183; 6 months ago\n+            </p>\n+        </div>\n+\n+\n+        <div class=\"video-preview\">\n+\n+            <div class=\"thumbnail-row\">\n+\n+            </div>\n+        </div>\n+    </body>\n+</head>\n+</html>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1709720825542,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\n<html>\n\n<head>\n    <title>Youtube.com Clone</title>\n    <style >\n        .thumbnail {\n            width: 300px;\n            display: block;\n        }\n\n        .search-bar{\n                display: block;\n        }\n\n        .video-title {\n            width: 300px;\n        }\n\n        .video-preview {\n\n            width: 300px;\n            display: inline-block;\n            vertical-align: top;\n            margin-right: 15px;\n        }\n\n\n        \n    </style>\n\n    <body>\n\n \n        \n        <input class=\"searh-bar\" type=\"text\" placeholder=\"Search\">\n\n        <div class=\"video-preview\">\n\n            <img class=\"thumbnail\" src=\"thumbnails/thumbnail.png\" alt=\"Dinosaur\"/>\n\n            <p class=\"video-title\">\n                Talking Tech and AI with Google CEO Sundar Pichai!\n            </p>\n\n            <p class=\"video-author\">\n                Marques Brownlee\n            </p>\n\n            <p class=\"video-stats\">\n                3.4M views &#183; 6 months ago\n            </p>\n        </div>\n\n\n        \n    </body>\n</head>\n</html>"
+        }
+    ]
+}
